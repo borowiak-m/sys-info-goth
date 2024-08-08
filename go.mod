@@ -11,4 +11,5 @@ require (
 	github.com/tklauser/numcpus v0.8.0 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	golang.org/x/sys v0.23.0 // indirect
+	nhooyr.io/websocket v1.8.11 // indirect
 )

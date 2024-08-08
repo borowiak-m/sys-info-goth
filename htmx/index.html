@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardware Monitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-900 text-gray-100">
+  <header class="bg-gray-800 shadow-lg py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-lg font-bold">Hardware Monitor</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-8">
+    <div class="grid grid-cols-3 gap-6 mt-8">
+      <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+        <div class="flex items-center mb-4">
+          <svg class="w-6 h-6 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+          </svg>
+          <h2 class="text-xl font-bold">System</h2>
+        </div>
+        <p class="text-gray-500 mb-4">
+          Operating System: Linux<br>
+          Platform: Fedora<br>
+          Hostname: eldora<br>
+          Number of processes running: 478<br>
+          Total memory: 64210 MB<br>
+          Free memory: 51440 MB<br>
+          Percentage used memory: 7.25%
+        </p>
+      </div>
+      <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+        <div class="flex items-center mb-4">
+          <svg class="w-6 h-6 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+          </svg>
+          <h2 class="text-xl font-bold">CPU</h2>
+        </div>
+        <p class="text-gray-500 mb-4">
+          Model Name: AMD Ryzen 7 5700X 8-Core Processor<br>
+          Family: 25<br>
+          Speed: 4661.72 MHz<br>
+          CPU [0]: 4.36%<br>
+          CPU [1]: 0.33%<br>
+          CPU [2]: 1.34%<br>
+          CPU [3]: 0.00%<br>
+          CPU [4]: 5.30%<br>
+          CPU [5]: 1.00%<br>
+          CPU [6]: 2.65%<br>
+          CPU [7]: 17.73%
+        </p>
+      </div>
+      <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+        <div class="flex items-center mb-4">
+          <svg class="w-6 h-6 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+          </svg>
+          <h2 class="text-xl font-bold">Disk</h2>
+        </div>
+        <p class="text-gray-500 mb-4">
+          Total disk space: 464 GB<br>
+          Used disk space: 38 GB<br>
+          Free disk space: 422 GB<br>
+          Percentage disk space usage: 8.44%
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 shadow-lg py-4">
+    <div class="container mx-auto text-center text-gray-500">
+      &copy; 2023 Hardware Monitor. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
