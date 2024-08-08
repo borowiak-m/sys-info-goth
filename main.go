@@ -1,5 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
-	println("hello")
+	fmt.Println("Starting system monitor...")
+	go func() {
+
+	}()
 }
