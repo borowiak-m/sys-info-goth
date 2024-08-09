@@ -4,17 +4,19 @@
     </head>
     <body>
         <h1>Hardware Monitor</h1>
-        <div id="update-timestamp">Loading data ...</div>
-        <div id="monitor-data">
-            <div id="system-data"></div>
-            <div id="disk-data"></div>
-            <div id="cpu-data"></div>
+        <div hx-ext="ws" ws-connect="ws://localhost:8080/ws">
+            <div id="update-timestamp">Loading data ...</div>
+            <div id="monitor-data">
+                <div id="system-data"></div>
+                <div id="disk-data"></div>
+                <div id="cpu-data"></div>
+            </div>
         </div>
         <script 
             src="https://unpkg.com/htmx.org@2.0.1" 
             integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" 
             crossorigin="anonymous">
         </script>
-        <script src="https://unpkg.com/htmx.org@1.9.12/dist/ext/ws.js"></script>
+        <script src="https://unpkg.com/htmx.org@2.0.1/dist/ext/ws.js"></script>
     </body>
 </html>
